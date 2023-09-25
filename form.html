@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>설문조사: 포항 주민들을 위한 설문조사</h2>
+
+<form action="save_ok.php">
+<fieldset>
+    <legend>필수 입력 사항</legend>
+    <p>이름을 입력하세요.</p>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Kwon"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Chongmyung"><br><br>
+    <p>성별(남/여)</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">female</label><br>
+    <p>현재 거주하는 곳?</p>
+    <select name="city">
+        <option value="1">양덕동</option>
+        <option value="2">흥해읍</option>
+        <option value="3">죽도동</option>
+    </select>
+</fieldset>
+    <p>취미?</p>
+    <input type="checkbox" id="hobby1" name="hobby1" value="독서">
+    <label for="hobby1">독서</label><br>
+    <input type="checkbox" id="hobby2" name="hobby2" value="운동">
+    <label for="hobby2">운동</label><br>
+    <input type="checkbox" id="hobby3" name="hobby3" value="여행">
+    <label for="hobby3">여행</label><br>
+    <input type="checkbox" id="hobby4" name="hobby4" value="쇼핑">
+    <label for="hobby4">쇼핑</label><br>
+    <p>만약 당신이 가방을 선물받는다면 어떤 색의 가방을 원하십니까?</p>
+    <p>원하는 가방의 색깔을 선택하세요.</p>
+    <input type='color' name="color" value='#ff0000'>
+    <p>포항에 거주하면서 건의사항</p> 
+    <textarea name='content' cols=40 rows=20></textarea>
+    <p>작성한 날짜</p>
+    <input type='date' min='2023-01-01' max='2023-12-31' name='fromdate'>
+    <p>마지막으로 현재 당신의 직업은 무엇입니까?</p>
+    <input list="occupation" name="occupation">
+    <datalist id="occupation">
+        <option value="student">
+        <option value="teacher">
+        <option value="employee">
+        <option value="owner-operator">
+    </datalist>
+    <input type="submit">
+    <p>설문조사 참여해주셔서 감사합니다.</p>
+</form>
+</body>
+</html>
